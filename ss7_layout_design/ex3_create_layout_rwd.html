@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header .login a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            text-align: center;
+        }
+
+        .sidebar {
+            width: 20%;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #2a84fa;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        section {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        article {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .ads {
+            width: 20%;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .ads .ad {
+            background: #e4e4e4;
+            padding: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="login"><a href="#">Login</a></div>
+    </header>
+    <div class="content">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section>
+                <h1>Welcome</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua...</p>
+            </section>
+            <article>
+                <h2>Test</h2>
+                <p>Lorem ipsum...</p>
+            </article>
+        </main>
+        <aside class="ads">
+            <div class="ad">ADS</div>
+            <div class="ad">ADS</div>
+        </aside>
+    </div>
+    <footer>
+        Footer Text
+    </footer>
+</div>
+</body>
+</html>
